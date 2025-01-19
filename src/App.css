@@ -1,0 +1,28 @@
+.wrapper{
+  width: 500px;
+  height: 570px;
+  margin: 50px auto;
+  overflow: hidden;
+  backdrop-filter: blur(30px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrapper .register{
+  transform: translate(500px);
+  transition: 0.5s;
+}
+
+.wrapper .login{
+  transform: translate(0px);
+  transition: 0.5s;
+}
+
+.wrapper.active .register{
+  transform: translate(0px);
+}
+
+.wrapper.active .login{
+  transform: translate(-500px);
+}
